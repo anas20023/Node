@@ -1,6 +1,6 @@
 import express from "express"
 const app = express()
-const port = 3000
+const port = 3000 || process.env.PORT
 app.use(express.json())
 app.get('/', (req, res) => { 
     // return the runtime of the server in h:m:s format
